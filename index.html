@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><h1>Formulario</h1></header>
+    <main>
+        <form id="form" action="#" method="POST">
+            <label for="inputNombre">Nombre:</label>
+            <input type="text" id="inputNombre" name="inputNombre">
+            <label for="inputEmail">Email</label>
+            <input type="email" id="inputEmail" name="inputEmail">
+            <label for="inputMensaje">Mensaje</label>
+            <input type="text" id="inputMensaje" name="inputMensaje">
+            <label for="inputImagen">Imagen</label>
+            <input type="text" id="inputImagen" name="inputImagen">
+            <input type="submit" id="submit" value="Enviar Consulta">
+        </form>
+        <h3>Usuarios</h3>
+        <section class="btnsContainer">
+            <button id="show">Show</button>
+            <button id="removeUser">Delete user</button>
+            <button id="clean">Clean</button>
+        </section>
+        <section class="cards"></section>
+    </main>
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
